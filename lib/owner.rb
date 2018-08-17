@@ -34,6 +34,10 @@ class Owner
     self.pets[:fishes] << new_fish
   end
 
+  def feed_fish
+    self.pets[:fishes].each {|fish| fish.mood = "happy"}
+  end
+
   def buy_dog(name)
     new_dog = Dog.new(name)
     self.pets[:dogs] << new_dog
@@ -46,6 +50,10 @@ class Owner
   def buy_cat(name)
     new_cat = cat.new(name)
     self.pets[:cats] << new_cat
+  end
+
+  def play_with_cats
+    self.pets[:cats].each {|cat| cat.mood = "happy"}
   end
 
 end
