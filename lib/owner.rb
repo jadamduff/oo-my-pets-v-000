@@ -1,5 +1,6 @@
 class Owner
-  attr_accessor :species
+  attr_reader :species
+  attr_accessor :name
   @@all = []
 
   def initialize(species)
@@ -16,6 +17,10 @@ class Owner
 
   def reset_all
     @@all = []
+  end
+
+  def say_species
+    puts "I am a #{self.species}."
   end
 
 end
