@@ -59,7 +59,7 @@ class Owner
   def sell_pets
     self.pets.each do |label, val|
       val.each {|pet| pet.mood = "nervous"}
-      val = []
+      val.empty
     end
   end
 
