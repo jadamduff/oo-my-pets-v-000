@@ -1,7 +1,10 @@
 class Owner
-
+  attr_accessor :species
   @@all = []
 
+  def initialize(species)
+    @species = species
+  end
 
   def all
     @@all
