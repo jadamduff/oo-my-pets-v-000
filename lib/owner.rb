@@ -56,4 +56,8 @@ class Owner
     self.pets[:cats].each {|cat| cat.mood = "happy"}
   end
 
+  def sell_pets
+    self.pets.each {|type, pet| pet = []}
+  end
+
 end
